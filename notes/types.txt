@@ -1,0 +1,15 @@
+The types include:
+
+any
+- a variable that can describe any type of value
+- declaring a variable without initializing it
+- Ex: let snow;
+- best practices: avoid using this type because the value can be redeclared which defeats the whole purpose of typescript
+
+unknown
+
+never
+
+enum
+
+tuple
