@@ -13,3 +13,8 @@ never
 enum
 
 tuple
+- a fixed length array where each element has a particular type
+- used when working with a pair of values, like a user with an ID and a name
+- useful mostly when working with 2 values
+- if you add more values, there will be an error because it targets only 2 elements (example below)
+- Ex: let user: [number, string] = [1, "Tandi"]
