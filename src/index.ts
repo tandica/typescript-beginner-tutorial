@@ -19,3 +19,30 @@ console.log(mySize);
 
 //objects
 let employee: { id: number; name: string } = { id: 1, name: "Bob" };
+
+//type alias
+type Employee = {
+  id: number;
+  name: string;
+};
+//the object gets the value type from the type alias Employee
+let employeeAlias: Employee = { id: 1, name: "Bob" };
+
+//union type
+function kgtoLbs(weight: number | string) {}
+
+//intersectional type
+type Draggable = {
+  drag: () => void;
+};
+
+type Resizable = {
+  resize: () => void;
+};
+
+type UIWidget = Draggable & Resizable;
+
+let textBox: UIWidget = {
+  drag: () => {},
+  resize: () => {},
+};

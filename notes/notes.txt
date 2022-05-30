@@ -37,3 +37,14 @@ Objects:
 - with objects, we can define the value of each variable 
 - can add readonly to variables that cannot be changed in the future
 - Ex: let employee: {readonly id: number, name: string} = {id: 1, name: "Bob"}
+
+Type Alias
+- can be a single place where you define an object, instead of definng it and having values in the same block
+
+Union Type
+- giving a function parameter or vaiable more than one type 
+- Ex: function kgtoLbs(weight: number | string) {}
+
+Intersection Type
+- giving a variable two types at the same time 
+- combining two types into one
