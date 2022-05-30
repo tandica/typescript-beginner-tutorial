@@ -48,3 +48,13 @@ Union Type
 Intersection Type
 - giving a variable two types at the same time 
 - combining two types into one
+
+Literal Type
+- annotate a variable with an exact or specific number
+- Ex: 
+type Quantity = 50 | 100;
+let quantity: Quantity = 100
+
+Nullable Type
+- function parameters that can use a union type to be null or undefined
+- Ex: function greet(name: string | null | undefined)
