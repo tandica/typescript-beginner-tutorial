@@ -1,0 +1,39 @@
+The types include:
+
+any
+- a variable that can describe any type of value
+- declaring a variable without initializing it
+- Ex: let snow;
+- best practices: avoid using this type because the value can be redeclared which defeats the whole purpose of typescript
+
+unknown
+
+never
+
+enum
+- a set of related constants
+- Ex: enum Size {Small, Medium, Large,}
+
+tuple
+- a fixed length array where each element has a particular type
+- used when working with a pair of values, like a user with an ID and a name
+- useful mostly when working with 2 values
+- if you add more values, there will be an error because it targets only 2 elements (example below)
+- Ex: let user: [number, string] = [1, "Tandi"]
+
+
+Functions:
+- always annotate functions to show what it should return. Makes it easier to read for others
+- also creates an error automatically if the function isnt returning what it should
+- make a parameter have a default value by making it equal to something when declaring it
+- this value changes if there is an arguement passed
+- you can also add a question mark like taxYear?: number, which means that the parameter is optional
+- Ex: 
+function calculateTax(income: number, taxYear = 2022): number {
+  return 0
+}
+
+Objects: 
+- with objects, we can define the value of each variable 
+- can add readonly to variables that cannot be changed in the future
+- Ex: let employee: {readonly id: number, name: string} = {id: 1, name: "Bob"}
